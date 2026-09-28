@@ -15,7 +15,18 @@ menuToggle.addEventListener('click', () => {
 });
 
 navLinks.forEach((link) => {
-  link.addEventListener('click', () => setMenuState(false));
+  link.addEventListener('click', (event) => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (!target) return;
+
+    event.preventDefault();
+    setMenuState(false);
+    target.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'start'
+    });
+    window.history.pushState(null, '', link.getAttribute('href'));
+  });
 });
 
 document.addEventListener('keydown', (event) => {
