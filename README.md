@@ -38,6 +38,8 @@ GitHub Pages로 배포합니다. 자세한 방법은 `guide.md`를 참고하세�
 
 작업이 끝나면 이 저장소(`26-w05-web-plan`)의 `main` 브랜치로 Pull Request를 보내주세요. PR에는 인라인 결과물과의 비교 소감도 함께 남겨주세요.
 
+> 인라인은 흐름을 끊지 않고 즉각적으로 결과를 맞추는 직관성, 플랜은 복잡한 과정을 미리 내다보고 실수를 줄여주는 안전장치 같다.
+
 ---
 
 전체 로드맵은 [`webdev-26`](https://github.com/kopo-kangseo-cybersec/webdev-26)에서 확인할 수 있습니다.
